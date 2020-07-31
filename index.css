@@ -1,0 +1,225 @@
+body{
+  font-family: 'Merienda One', cursive;
+}
+.bg-light {
+    background-color: #521b67!important;
+    height: 90px;
+  }
+
+.navbar-light .navbar-logo {
+
+    text-shadow: -2px 6px 20px black;
+    color: white;
+    border-width: 0px;
+    border-style: outset;
+    box-shadow: 0 0 1px white;
+    padding-right: 6px;
+  }
+.d-inline-block{
+  border-style: outset;
+  border-width: 5px;
+  color: #e4e4e4;
+
+}
+
+
+  .navbar-light .navbar-nav .nav-link {
+      color: rgb(255 255 255);
+  }
+  .navbar-light .navbar-nav .active>.nav-link{
+      color: rgb(255 255 255);
+  }
+
+.navbar-expand-lg .navbar-collapse {
+    margin-left: 35%;
+        width: 387px;
+  }
+.navbar-toggler {
+  background-color: #e08484;
+  }
+a{
+  color: white;
+}
+.jumbotron{
+  padding: 0rem 0rem;
+  background-color: #e9ebf3;
+}
+.display-4 {
+  background-color: #9cbf8e;
+  border: solid;
+   text-align: center;
+    color: #044214;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+.container {
+    margin-top: 14px;
+    margin-bottom: 44px
+  }
+
+.mb-5, .my-5 {
+    margin-bottom: 1rem!important;
+  }
+  .shadow {
+    box-shadow: 0 1.5rem 2.5rem rgba(0,0,0,8.15)!important;
+}
+.shadowbox{
+  box-shadow: 5px;
+}
+.p-3 {
+    padding: 1rem!important;
+  }
+  .main-row{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+.btn-group-lg>.btn, .btn-lg {
+    margin-bottom: 1rem;
+  }
+.pt-4, .py-4 {
+    margin-top: 3rem;
+    background-color: #40203f;
+    color: white;
+}
+.hbtn{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+input[type="text" i] {
+   width: 40%;
+   padding: 4px 6px;
+   display: block;
+    }
+.mt-md-0, .my-md-0 {
+    margin-left: 4%;
+  }
+  .no-gutters{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+.cardlist{
+    max-width: 80%;
+  }
+
+  .card-img, .card-img-bottom, .card-img-top {
+    width: 100%;
+    height: 100%;
+}
+  .card{
+      margin-bottom: 0rem;
+    }
+.booknow-btn{
+  width: 100px;
+  margin-left: 100%;
+}
+.drop-btn{
+  cursor: pointer;
+  text-align: center;
+  background-color: #ef896a;
+  width: 280px;
+  margin-bottom: 2rem;
+  margin-left: 15%;
+  margin-right: 50%;
+}
+.map1{
+  height: 200px;
+}
+.details-form{
+  margin-bottom: 2rem;
+  border: solid 1px;
+}
+.details{
+  font-weight: 500;
+}
+.intbtn{
+  background-color: #37ea44;
+  width: 100%;
+
+}
+p {
+    margin-top: 19px;
+    margin-bottom: 1rem;
+    text-align-last: start;
+  }
+input[type=text] {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 48px;
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.btn-summit{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn-outline-secondary {
+    color: #000000;
+    border-color: #000000;
+}
+
+.page-footer{
+  background-color: #483a54;
+  }
+
+.fb{
+  width: 45px;
+}
+.insta{
+  width: 45px;
+}
+.youtube{
+  width: 45px;
+}
+.twitter{
+  width: 45px;
+}
+.gmail{
+  width: 45px;
+}
