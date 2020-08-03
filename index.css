@@ -4,6 +4,7 @@ body{
 .bg-light {
     background-color: #521b67!important;
     height: 90px;
+    z-index: 1;
   }
 
 .navbar-light .navbar-logo {
@@ -43,6 +44,10 @@ a{
 .jumbotron{
   padding: 0rem 0rem;
   background-color: #e9ebf3;
+}
+.video{
+  width: 100px;
+  height: 100px;
 }
 .display-4 {
   background-color: #9cbf8e;
