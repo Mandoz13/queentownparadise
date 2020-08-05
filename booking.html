@@ -16,7 +16,7 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-  
+
 
 
 </head>
@@ -54,6 +54,13 @@
                   <h1>Ticketting</h1>
                       <label for="order">Ticket details</label>
                       <input id="order" type="text" name="order" value="" placeholder="1">
+                      <label for="order">Time</label>
+                      <input id="time" type="text" name="time" value="" placeholder="">
+                      <label for="order">Child/Adult</label>
+                      <input id="age" type="text" name="age" value="" placeholder="">
+                      <label for="order">Lunch</label>
+                      <input id="lunch" type="text" name="lunch" value="" placeholder="">
+
                       <br>
                       Total Price:
                       <input id="total" type="text" name="total" placeholder="0" >
@@ -63,11 +70,13 @@
               </div>
             <div class="row">
                <div class="col-50">
-                 <h3>Billing Address</h3>
+                 <h3>Address</h3>
                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
                  <input type="text" id="fname" name="firstname" placeholder="Manoj Rai" required>
                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
                  <input type="text" id="email" name="email" placeholder="rai@example.com" required>
+                 <label for="D.O.B"> Date of Birth</label>
+                 <input type="text" id="D.O.B" name="D.O.B" placeholder="12/12/1990" required>
                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
                  <input type="text" id="adr" name="address" placeholder="11 Copper Beech Avenue" required>
                  <label for="city"><i class="fa fa-institution"></i> City</label>
@@ -112,7 +121,7 @@
             </div>
            <div class="col-md-6 justify-content-middle">
              <label class="checkbox">
-               <input type="checkbox" checked="checked" name="sameadr"> Pick up adress same as billing />
+               <input type="checkbox" checked="checked" name="sameadr"> Pick up adress same as billing
              </label>
            </div>
              <input type="submit" value="Confirm Booking" class="btn-summit">
@@ -168,8 +177,15 @@
       var params = new URLSearchParams(document.location.search.substring(1));
       var product = params.get("product");
       var qty = params.get("qty");
+      var day = params.get("day");
+      var time = params.get("time");
+      var age = params.get("age");
+      var lunch = params.get("lunch");
       var total = params.get("total");
       document.getElementById("order").value = (product + " Number of person " + qty);
+      document.getElementById("time").value = (day + " " + time);
+      document.getElementById("age").value = (age);
+      document.getElementById("lunch").value = (lunch);
       // document.getElementById('product').value = product;
       // document.getElementById("order").innerHTML = (product + " Number of person " + qty);
       document.getElementById("total").value = total;
@@ -177,104 +193,6 @@
     }
  </script>
 
- <script>
-   loadOrder();
-     function loadOrder1(){
-     var params = new URLSearchParams(document.location.search.substring(1));
-     var product1 = params.get("product1");
-     var qty1 = params.get("qty1");
-     var total = params.get("total1");
-     document.getElementById("order1").value = (product1 + " Number of person " + qty1);
-     // document.getElementById('product').value = product;
-     // document.getElementById("order").innerHTML = (product + " Number of person " + qty);
-     document.getElementById("total").value = total;
-     // document.getElementById("order").value = (qty * 550);
-   }
-</script>
-<script>
-  loadOrder();
-    function loadOrder2(){
-    var params = new URLSearchParams(document.location.search.substring(1));
-    var product2 = params.get("product2");
-    var qty2 = params.get("qty2");
-    var total = params.get("total2");
-    document.getElementById("order").value = (product2 + " Number of person " + qty2);
-    // document.getElementById('product').value = product;
-    // document.getElementById("order").innerHTML = (product + " Number of person " + qty);
-    document.getElementById("total").value = total;
-    // document.getElementById("order").value = (qty * 550);
-  }
-</script>
-<script>
-  loadOrder();
-    function loadOrder3(){
-    var params = new URLSearchParams(document.location.search.substring(1));
-    var product3 = params.get("product3");
-    var qty3 = params.get("qty3");
-    var total = params.get("total3");
-    document.getElementById("order").value = (product3 + " Number of person " + qty3);
-    // document.getElementById('product').value = product;
-    // document.getElementById("order").innerHTML = (product + " Number of person " + qty);
-    document.getElementById("total").value = total;
-    // document.getElementById("order").value = (qty * 550);
-  }
-</script>
-<script>
-  loadOrder();
-    function loadOrder4(){
-    var params = new URLSearchParams(document.location.search.substring(1));
-    var product4 = params.get("product4");
-    var qty4 = params.get("qty4");
-    var total = params.get("total4");
-    document.getElementById("order").value = (product4 + " Number of person " + qty4);
-    // document.getElementById('product').value = product;
-    // document.getElementById("order").innerHTML = (product + " Number of person " + qty);
-    document.getElementById("total").value = total;
-    // document.getElementById("order").value = (qty * 550);
-  }
-</script>
-<script>
-  loadOrder();
-    function loadOrder5(){
-    var params = new URLSearchParams(document.location.search.substring(1));
-    var product5 = params.get("product5");
-    var qty5 = params.get("qty5");
-    var total = params.get("total5");
-    document.getElementById("order").value = (product5 + " Number of person " + qty5);
-    // document.getElementById('product').value = product;
-    // document.getElementById("order").innerHTML = (product + " Number of person " + qty);
-    document.getElementById("total").value = total;
-    // document.getElementById("order").value = (qty * 550);
-  }
-</script>
-<script>
-  loadOrder();
-    function loadOrder6(){
-    var params = new URLSearchParams(document.location.search.substring(1));
-    var product6 = params.get("product6");
-    var qty6 = params.get("qty6");
-    var total = params.get("total6");
-    document.getElementById("order").value = (product6 + " Number of person " + qty6);
-    // document.getElementById('product').value = product;
-    // document.getElementById("order").innerHTML = (product + " Number of person " + qty);
-    document.getElementById("total").value = total;
-    // document.getElementById("order").value = (qty * 550);
-  }
-</script>
-<script>
-  loadOrder();
-    function loadOrder7(){
-    var params = new URLSearchParams(document.location.search.substring(1));
-    var product7 = params.get("product7");
-    var qty7 = params.get("qty7");
-    var total = params.get("total7");
-    document.getElementById("order").value = (product7 + " Number of person " + qty7);
-    // document.getElementById('product').value = product;
-    // document.getElementById("order").innerHTML = (product + " Number of person " + qty);
-    document.getElementById("total").value = total;
-    // document.getElementById("order").value = (qty * 550);
-  }
-</script>
 
 
 </body>

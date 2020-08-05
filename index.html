@@ -15,6 +15,8 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
   </head>
 <body>
 
@@ -40,15 +42,22 @@
          </ul>
        </div>
     </nav>
-
   <div class="jumbotron jumbotron-fluid">
-    <div class="shadow mb-5 bg-white rounded">
+    <div class="shadow mb-5 bg-white rounded container-coverpic">
         <a href="activity.html"><img src="img/222.jpg" alt="3" class="img-fluid"></a>
+        <div class="container-text justify-content-middle ">
+      <h1 class="ml3">Your Endless Adventure Begins at Queenstown</h1>
+     </div>
     </div>
-    <div class="container">
+    <div class="row">
+    <div class="container-intro col-md-8 col-sm-3 justify-content-middle intro">
+      <p>Queenstown is one of the best tourist destination in the world. Queenstown offers you varities of adventure and fun activities of your choice and Quenstown Paradise is here to Guide you through your adventure. In this website you will find different types of tours and activities. You can book your favorite activities now. Queenstown Paradise has 3 branches in Queenstown. Our main branch was established in 2015 with the goal to help visitors to choose and book their favorite tours and activities also, to guide them along the adventurous journey of natural paradise. We dont make bookings on Weekends. Our office is in the centre of Remarkable Park. Feel free to contact in our number - 021137895.</p>
+    </div>
+  </div>
+    <div class="container-pop">
           <h1 class="display-4">Popular Tours and Activities In Queenstown</h1>
       </div>
-    <div class="row row-cols-1 row-cols-md-2 main-row">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-md-3 main-row">
       <div class="shadow mb-5 bg-white rounded">
        <div class="col mb-4">
         <div class="card">
@@ -162,5 +171,22 @@
       </div>
     </footer>
    </div>
+  <script>
+  anime.timeline({loop: true})
+ .add({
+   targets: '.ml3 .letter',
+   opacity: [1,6],
+   easing: "easeInOutQuad",
+   duration: 950,
+   delay: (el, i) => 50 * (i+1)
+ }).add({
+   targets: '.ml3',
+   opacity: 0,
+   duration: 1100,
+   easing: "easeOutExpo",
+   delay: 900
+ });
+  </script>
+
  </body>
 </html>

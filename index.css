@@ -45,11 +45,36 @@ a{
   padding: 0rem 0rem;
   background-color: #e9ebf3;
 }
-.video{
-  width: 100px;
-  height: 100px;
+.container-coverpic{
+  text-align: center;
+  position: relative;
+
 }
+.container-text{
+  left: 20px;
+  position: absolute;
+  top: 85%;
+  bottom: 50%;
+}
+
+.ml3 {
+  text-shadow: 2px 2px #56054d;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: #ffceed;
+  font-weight: 300;
+  font-size: 17px;
+}
+.intro{
+  margin-top: 28px;
+  margin-left: 16%;
+  margin-right: 15%;
+  border: solid;
+  border-radius: 10px;
+}
+
 .display-4 {
+  margin-top: 50px;
   background-color: #9cbf8e;
   border: solid;
    text-align: center;
@@ -58,16 +83,20 @@ a{
     font-weight: 600;
     line-height: 1.2;
   }
+  .container-pop{
+   margin-left: 10%;
+   margin-right: 10%;
+  }
 .container {
-    margin-top: 14px;
-    margin-bottom: 44px
+    margin-top: 20px;
+    margin-bottom: 50px
   }
 
 .mb-5, .my-5 {
     margin-bottom: 1rem!important;
   }
-  .shadow {
-    box-shadow: 0 1.5rem 2.5rem rgba(0,0,0,8.15)!important;
+.shadow {
+    box-shadow: 0 1.5rem 2.5rem rgba(0,0,0,0.80)!important;
 }
 .shadowbox{
   box-shadow: 5px;
@@ -76,8 +105,8 @@ a{
     padding: 1rem!important;
   }
   .main-row{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 9%;
+    margin-right: 9%;
   }
 
 .btn-group-lg>.btn, .btn-lg {

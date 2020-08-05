@@ -142,8 +142,8 @@
                <div class="col-md-6">
                 <div class="card-body">
                   <h5 class="card-title">Helicopter Tour and Mountain View Landing</h5>
-                  <p class="card-text">Take off from Queenstown Airport, enjoy the scenic 30 min flight around with mountain view and land on the top of mauntain. Take good photo, make snow man and enjoy the view.</p>
-                  <p class="card-text"><small class="text-muted"><b>Price: NZ$550</b></small></p>
+                  <p class="card-text">Take off from Queenstown Airport, enjoy the 30 min scenic flight around with mountain view and land on the top of mauntain. Take good photo, make snow man and enjoy the moment.</p>
+                  <p class="card-text"><small class="text-bold"><b>Price: NZ$550</b></small></p>
                 </div>
                </div>
               </div>
@@ -159,6 +159,8 @@
             <div class="container-fluid col-md-4 col-sm-6 display-flex details">
               <p>Duration: 3 hours</p>
               <p>Price:    NZ$550</p>
+              <p>Time: Morning(7am-10am)</p>
+              <p>    : Afternoon(1pm-4pm)</p>
               <p>Meeting:  Queenstown Aiport</p>
               <p>Cancelation: Yes</p>
               <p>Pick Up: Optional</p>
@@ -166,10 +168,33 @@
             </div>
             <div class="container-fluid col-md-4 col-sm-6 form">
               <form action="booking.html" >
-                <label for="product">Tour</label>
+                <label for="product">Helicopter Tour</label>
                 <select class="form-control" id="product" name="product" onchange="calculateTotal()">
                   <option>By Helicopter</option>
                   <option>By Plane</option>
+                </select>
+                <label for="product">Day</label>
+                <select class="form-control" id="day" name="day" onchange="calculateTotal()">
+                  <option>Monday</option>
+                  <option>Tuesday</option>
+                  <option>Wednusday</option>
+                  <option>Thursday</option>
+                  <option>Friday</option>
+                </select>
+                <label for="product">Time</label>
+                <select class="form-control" id="time" name="time" onchange="calculateTotal()">
+                  <option>Morning(7am-10am)</option>
+                  <option>Afternoon(1pm-4pm)</option>
+                </select>
+                <label for="product">Age</label>
+                <select class="form-control" id="age" name="age" onchange="calculateTotal()">
+                  <option>Child</option>
+                  <option>Adult</option>
+                </select>
+                <label for="product">Lunch</label>
+                <select class="form-control" id="lunch" name="lunch" onchange="calculateTotal()">
+                  <option>Lunch</option>
+                  <option>Without Lunch</option>
                 </select>
                 <label for="qty">Number of People</label>
                 <input id="qty" type="number" name="qty" min="1" max="5" placeholder="1" required onchange="calculateTotal()"><br>
@@ -193,8 +218,8 @@
               <div class="col-md-6">
                 <div class="card-body">
                   <h5 class="card-title">Milford Coach and Trekking</h5>
-                  <p class="card-text">Drive along the magnificent Milford Road by glass-roof coach and discover some of the best short walks and photo stops along the way. Enjoy the beauty of Milford Sound and trek for 3 hours Trekking</p>
-                  <p class="card-text"><small class="text-muted"><b>Price: NZ$200</b></small></p>
+                  <p class="card-text">Drive along the magnificent Milford Road by glass-roof coach and discover some of the best short walks and take photo along the way. Enjoy the beauty of Milford Sound and trek for 3 hours.</p>
+                  <p class="card-text"><small class="text-bold"><b>Price: NZ$200</b></small></p>
                 </div>
               </div>
             </div>
@@ -221,6 +246,29 @@
               <label for="product1">Tour and Trek</label>
             <select class="form-control" id="product1" name="product" onchange="calculateTotal1()">
                 <option>Couach and Trek(MilfordSound)</option>
+                <option>Couach and Trek(MilfordSound) scenic flight while comming back</option>
+            </select>
+            <label for="product">Day</label>
+            <select class="form-control" id="day1" name="day" onchange="calculateTotal()">
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednusday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+            </select>
+            <label for="product">Time</label>
+            <select class="form-control" id="time1" name="time" onchange="calculateTotal()">
+              <option>Full-Day(7am-7am)</option>
+            </select>
+            <label for="product">Age</label>
+            <select class="form-control" id="age1" name="age" onchange="calculateTotal1()">
+              <option>Child</option>
+              <option>Adult</option>
+            </select>
+            <label for="product">Lunch</label>
+            <select class="form-control" id="lunch1" name="lunch" onchange="calculateTotal1()">
+              <option>Lunch</option>
+              <option>Without Lunch</option>
             </select>
               <label for="qty1">Number of People</label>
               <input id="qty1" type="number" name="qty" min="1" max="10" placeholder="1" required onchange="calculateTotal1()"><br>
@@ -242,8 +290,8 @@
               <div class="col-md-6">
                 <div class="card-body">
                   <h5 class="card-title">1 Hour Guided Zipline</h5>
-                  <p class="card-text">Training and one hour Zipline run. You will follow the instruction and monitor at point to point. Free cable car ride to the top of Gondala and back</p>
-                  <p class="card-text"><small class="text-muted"><b>Price: NZ$260</b></small></p>
+                  <p class="card-text">Training classes and one hour Zipline run. You will follow the instruction and will be monitor at point to point. Free cable car ride to the top of Gondala and back</p>
+                  <p class="card-text"><small class="text-bold"><b>Price: NZ$260</b></small></p>
                 </div>
               </div>
             </div>
@@ -270,6 +318,31 @@
                 <option>Zipline(by Cable Car to top of Gondala)</option>
                 <option>Zipline(by Trekking to top of Gondala)25% discount</option>
              </select>
+             <label for="product">Day</label>
+             <select class="form-control" id="day2" name="day" onchange="calculateTotal()">
+               <option>Monday</option>
+               <option>Tuesday</option>
+               <option>Wednusday</option>
+               <option>Thursday</option>
+               <option>Friday</option>
+             </select>
+             <label for="product">Time</label>
+             <select class="form-control" id="time2" name="time" onchange="calculateTotal()">
+               <option>Morning(10am)</option>
+               <option>Morning(11am)</option>
+               <option>Afternoon(1pm)</option>
+               <option>Afternoon(3pm)</option>
+             </select>
+             <label for="product">Age</label>
+             <select class="form-control" id="age2" name="age" onchange="calculateTotal2()">
+               <option>Child</option>
+               <option>Adult</option>
+             </select>
+             <label for="product">Lunch</label>
+             <select class="form-control" id="lunch2" name="lunch" onchange="calculateTotal2()">
+               <option>Lunch</option>
+               <option>Without Lunch</option>
+             </select>
                 <label for="qty2">Number of People</label>
                 <input id="qty2" type="number" name="qty" min="1" max="5" placeholder="1" required onchange="calculateTotal2()"><br>
               Total Price:
@@ -289,8 +362,8 @@
               <div class="col-md-6">
                 <div class="card-body">
                   <h5 class="card-title">Halfday Hiking with Local Guide and Lunch</h5>
-                  <p class="card-text">Hike with our friendly local guide in your choice of destination. There will be lunch and water breaks</p>
-                  <p class="card-text"><small class="text-muted"><b>Price: NZ$150</b></small></p>
+                  <p class="card-text">Hike with our friendly local guide of your choice of destination. There will be lunch and water for you in the way.</p>
+                  <p class="card-text"><small class="text-bold"><b>Price: NZ$150</b></small></p>
                 </div>
               </div>
             </div>
@@ -319,6 +392,28 @@
                 <option>Hinking(Lake Alta)</option>
                 <option>Hinking(Cecil Peak)</option>
             </select>
+            <label for="product">Day</label>
+            <select class="form-control" id="day3" name="day" onchange="calculateTotal()">
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednusday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+            </select>
+            <label for="product">Time</label>
+            <select class="form-control" id="time3" name="time" onchange="calculateTotal3()">
+              <option>Day(10am-4pm)</option>
+            </select>
+            <label for="product">Age</label>
+            <select class="form-control" id="age3" name="age" onchange="calculateTotal3()">
+              <option>Child</option>
+              <option>Adult</option>
+            </select>
+            <label for="product">Lunch</label>
+            <select class="form-control" id="lunch3" name="lunch" onchange="calculateTotal3()">
+              <option>Lunch</option>
+              <option>Without Lunch</option>
+            </select>
                 <label for="qty3">Number of People</label>
               <input id="qty3" type="number" name="qty" min="1" max="30" placeholder="1" required onchange="calculateTotal3()"><br>
               Total Price:
@@ -339,7 +434,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Paragliding with Professional Guide</h5>
                   <p class="card-text">Queenstown is full of adventure and paragliding is one of the popular acativity with reasonable price.</p>
-                  <p class="card-text"><small class="text-muted"><b>Price: NZ$100</b></small></p>
+                  <p class="card-text"><small class="text-bold"><b>Price: NZ$100</b></small></p>
                 </div>
               </div>
             </div>
@@ -364,6 +459,21 @@
               <select class="form-control" id="product4" name="product" onchange="calculateTotal4()">
                 <option>Paragliding</option>
               </select>
+              <label for="product">Day</label>
+              <select class="form-control" id="day4" name="day" onchange="calculateTotal()">
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednusday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+              </select>
+              <label for="product">Time</label>
+              <select class="form-control" id="time4" name="time" onchange="calculateTotal()">
+                <option>Morning(10am)</option>
+                <option>Morning(11am)</option>
+                <option>Afternoon(1pm)</option>
+                <option>Afternoon(3pm)</option>
+              </select>
                 <label for="qty">Number of People</label>
                 <input id="qty4" type="number" name="qty" min="1" max="10" placeholder="1" required onchange="calculateTotal4()"><br>
 
@@ -385,7 +495,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Queenstown Remote Wine Test Tour</h5>
                   <p class="card-text">Best tour in Queenstown for Wine Lover. Test the pure local wine with the remote view.</p>
-                  <p class="card-text"><small class="text-muted"><b>Price: NZ$190</b></small></p>
+                  <p class="card-text"><small class="text-bold"><b>Price: NZ$190</b></small></p>
                 </div>
               </div>
             </div>
@@ -411,6 +521,20 @@
               <select class="form-control" id="product5" name="product" onchange="calculateTotal5()">
                <option>Wine Tour by Bus</option>
               </select>
+              <label for="product">Day</label>
+              <select class="form-control" id="day5" name="day" onchange="calculateTotal()">
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednusday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+              </select>
+              <label for="product">Time</label>
+              <select class="form-control" id="time5" name="time" onchange="calculateTotal()">
+                <option>Morning(7am-1pm)</option>
+                <option>Afternoon(12pm-6pm)</option>
+
+              </select>
               <label for="qty">Number of People</label>
               <input id="qty5" type="number" name="qty" min="1" max="30" placeholder="1" required onchange="calculateTotal5()"><br>
               Total Price:
@@ -431,7 +555,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Dirt Bike Tour With Professional Riders</h5>
                   <p class="card-text">Ride the bike of your choice for 4 hour make the moment memorable only in NZ$200.</p>
-                  <p class="card-text"><small class="text-muted"><b>Price: NZ$200</b></small></p>
+                  <p class="card-text"><small class="text-bold"><b>Price: NZ$200</b></small></p>
                 </div>
               </div>
             </div>
@@ -457,6 +581,20 @@
                 <option>Dirt Bike(Two-Wheel)</option>
                 <option>Dirt Bike(Four-Wheel)</option>
               </select>
+              <label for="product">Day</label>
+              <select class="form-control" id="day6" name="day" onchange="calculateTotal()">
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednusday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+              </select>
+              <label for="product">Time</label>
+              <select class="form-control" id="time6" name="time" onchange="calculateTotal()">
+                <option>Morning(8am-12pm)</option>
+                <option>Afternoon(1pm-5pm)</option>
+
+              </select>
                 <label for="qty">Number of People</label>
                 <input id="qty6" type="number" name="qty" min="1" max="10" placeholder="1" required onchange="calculateTotal6()"><br>
               Total price:
@@ -477,8 +615,8 @@
               <div class="col-md-6">
                 <div class="card-body">
                   <h5 class="card-title">Small Group Shotover Rafting</h5>
-                  <p class="card-text">Have a great moment with the swift flowing Shotover River just 15 min drive from Queenstown.</p>
-                  <p class="card-text"><small class="text-muted"><b>Price: NZ$190</b></small></p>
+                  <p class="card-text">Have a great moment with the swiftly flowing Shotover River, just 15 min drive from Queenstown.</p>
+                  <p class="card-text"><small class="text-bold"><b>Price: NZ$190</b></small></p>
                 </div>
               </div>
             </div>
@@ -503,6 +641,31 @@
               <label for="product7">Shotover Rafting</label>
               <select class="form-control" id="product7" name="product" onchange="calculateTotal7()">
                 <option>Rafting</option>
+              </select>
+              <label for="product">Day</label>
+              <select class="form-control" id="day7" name="day" onchange="calculateTotal()">
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednusday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+              </select>
+              <label for="product">Time</label>
+              <select class="form-control" id="time7" name="time" onchange="calculateTotal()">
+                <option>Morning(10am)</option>
+                <option>Afternoon(12pm)</option>
+                <option>Afternoon(2pm)</option>
+                <option>Afternoon(3pm)</option>
+              </select>
+              <label for="product">Age</label>
+              <select class="form-control" id="age7" name="age" onchange="calculateTotal()">
+                <option>Child</option>
+                <option>Adult</option>
+              </select>
+              <label for="product">Lunch</label>
+              <select class="form-control" id="lunch7" name="lunch" onchange="calculateTotal()">
+                <option>Lunch</option>
+                <option>Without Lunch</option>
               </select>
                 <label for="qty">Number of People</label>
                 <input id="qty7" type="number" name="qty" min="1" max="5" placeholder="1" required onchange="calculateTotal7()"><br>
